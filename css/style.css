@@ -1,0 +1,322 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;  
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: #FFFDD0;
+
+}
+.nav-link ul{
+  list-style: none;
+  background-color: rgb(59, 59, 59) ;
+  padding: 0px;
+  margin: 0px;
+overflow: hidden;
+}
+.nav-link a{
+  color: #b16b5f;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.nav-link a:hover{
+background-color: darkblue;
+}
+.nav-link li{
+  float: left;
+}
+
+@media screen and (max-width: 768px){
+.nav-link li{
+  float: left;
+  width :100%;
+}
+}
+  
+.logo{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 768px){
+.logo{ 
+  width :80%;
+}
+}
+@media screen and (max-width: 480px){
+.logo{ 
+  width :90%;
+}
+}
+ 
+
+h1{
+text-align: center;
+color: #b16b5f;
+}
+h3{
+text-align: center;
+color: #b16b5f;    
+}
+
+image{
+display: block;
+margin: 0 auto;
+width: 50%;
+height: auto;
+}
+.Gallery {
+    display: inline-block;
+    border: 1px solid rgb(34, 228, 50);
+    margin: 10px;
+    width: 200px;
+    vertical-align: top;
+}
+
+.Gallery .description {
+    padding: 10px;
+    text-align: center;
+}
+
+.Gallery:hover {
+    border: 1px solid rgb(204, 0, 255);
+}
+
+.Gallery img,
+.Gallery video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .Gallery {
+        width: 45%;
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Gallery {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+.contact-left {
+    width: 100%;
+    text-align: left;
+}
+
+.contact-title {
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+.contact-us-title {
+    color: #D4AF37;
+    margin-top: 20px;
+}
+
+.contact-label {
+    color: #b16b5f;
+    margin-top: 15px;
+}
+
+.contact-right {
+    text-align: center;
+}
+
+.contact-logo {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+input,
+textarea {
+    max-width: 100%;
+    padding: 8px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .contact-logo {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contact-container {
+        padding: 10px;
+    }
+    .contact-logo {
+        width: 90%;
+    }
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+
+
+
+.cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 100px;
+}
+.card{
+  width: 325px;
+  background-color: #b16b5f;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0,  0.3);
+  cursor: pointer;
+}
+
+.card-content{
+  padding: 30px 30px;
+  line-height: 1.3;
+}
+.card-content h1{
+font-size: 35px ;
+margin-bottom: 10px;
+color: #d4af37;
+}
+.card-content p{
+  font-size: 17px ;
+margin-bottom: 20px;
+color: #d4af37;
+}
+.about-title{
+  color: #d4af37; 
+}
+.about-image{
+  width: 400px;
+  height: 580px;
+  max-width: 100%;
+  margin: 70px;
+  border-radius: 8px;
+} 
+.about-text{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+    .about-image {
+        width: 45%;
+        height: auto;
+    }
+    .about-text {
+        display: block;
+    }
+    .about-text p {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-image {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+  }
+  .enquiry-logo {
+    width: 75px;
+    height: 85px;
+    max-width: 100%;
+}
+
+.enquiry-title {
+    color: #D4AF37;
+    text-align: center;
+    margin: 20px;
+}
+
+.enquiry-intro {
+    text-align: center;
+    color: #b16b5f;
+    margin: 20px;
+}
+
+.enquiry-form {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.enquiry-form div {
+    margin-bottom: 15px;
+}
+
+.enquiry-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.enquiry-form input:focus,
+.enquiry-form textarea:focus,
+.enquiry-form select:focus {
+    border: 2px solid #D4AF37;
+}
+
+.enquiry-form textarea {
+    height: 100px;
+}
+
+.enquiry-form input[type="submit"] {
+    width: auto;
+    padding: 10px 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .enquiry-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .enquiry-form {
+        width: 95%;
+    }
+
+    .enquiry-logo {
+        display: block;
+        margin: auto;
+    }
+}
